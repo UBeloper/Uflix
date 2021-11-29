@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: black;
+}
+
+svg {
+    fill: #e50914;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navbar-right {
+
+}
+
+.navbar-right select {
+    height: 2.5rem;
+    width: 6rem;
+}
+
+.navbar-right > span {
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: white;
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    /* padding */
+}
+
+.header {
+    color: white;
+    height: 85vh;
+    margin: 0px;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/780e6f4e-6f56-4926-82f5-ee222fb056c0/KR-ko-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+    border-bottom: 5px gray solid;
+}
+
+/* .header::after {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 120px 100px 250px black, inset -120px -100px;
+
+} */
+
+.container1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container1 > h1 {
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.container1 > h4{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.container1 > h5{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.loginbox {
+    text-align: center;
+}
+
+#login {
+    height: 3.5rem; 
+    width: 500px;
+}
+
+#start {
+    background-color: red;
+    /* padding */
+    font-size: 2rem;
+}
+
+.second {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+.second-left {
+    width: 30rem; /* 이런식으로 작업 */
+}
+
+.second-left > h1 {
+    font-size: 3rem;
+}
+
+.third {
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+.forth {
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+.fifth {
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+.FAQ {
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    border-bottom: 5px gray solid;
+}
+
+
+
+
