@@ -1,0 +1,358 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-image: url('/img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 300px -500px 250px #000000 , inset -120px -100px 250px #000000;
+}
+
+.top {
+    position: relative;
+    z-index: 2;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.logo {
+    width: 12rem;
+    margin-left: 2rem;
+
+}
+
+.lang-login {
+    display: flex;
+    margin-bottom: 1rem;
+    
+}
+.lang-login > select {
+    margin-right: 2rem;
+    padding : 0.5rem 0.7rem;
+}
+
+.lang-login > span {
+    margin-right: 4rem;
+    background-color: red;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    border: none;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    height: 85vh;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.container > h1 {
+    font-size: 60px;
+    padding: 10px;
+}
+
+.container > h2 {
+    font-weight: 400;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.container > h3 {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container > div {
+    display: flex;
+}
+.container > div > input {
+    width: 400px;
+    height: 60px;
+}
+
+.container > div > span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: red;
+    padding: 0.8rem 1.2rem;
+}
+
+/* 두번째 장*/
+
+.second-page {
+    color: white;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.second-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.second-left {
+    margin: 2rem;
+}
+.second-left > h1 {
+    font-size: 50px;
+    padding: 1rem 0;
+}
+
+.second-left > h4 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.second-right {
+    margin: 2rem;
+}
+.second-right > img {
+    width: 500px;
+}
+
+/* 세번째 장*/
+
+.third-page {
+    color: white;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.third-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.third-right {
+    margin: 2rem;
+}
+.third-right > h1 {
+    font-size: 50px;
+    padding: 1rem 0;
+    word-break: keep-all;
+}
+
+.third-right > h4 {
+    font-weight: 400;
+    font-size: 25px;
+    word-break: keep-all;
+}
+
+.third-left {
+    margin: 2rem;
+}
+.third-left > img {
+    width: 500px;
+}
+
+/* 네번째 장 */
+
+.fourth-page {
+    color: white;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.fourth-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fourth-left {
+    margin: 2rem;
+}
+.fourth-left > h1 {
+    font-size: 50px;
+    padding: 1rem 0;
+    word-break: keep-all;
+}
+
+.fourth-left > h4 {
+    font-weight: 400;
+    font-size: 25px;
+    word-break: keep-all;
+}
+
+.fourth-right {
+    margin: 2rem;
+}
+.fourth-right > img {
+    width: 500px;
+}
+
+/* 다섯번째 장 */
+
+.fifth-page {
+    color: white;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.fifth-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fifth-right {
+    margin: 2rem;
+}
+.fifth-right > h1 {
+    font-size: 50px;
+    padding: 1rem 0;
+    word-break: keep-all;
+}
+
+.fifth-right > h4 {
+    font-weight: 400;
+    font-size: 25px;
+    word-break: keep-all;
+}
+
+.fifth-left {
+    margin: 2rem;
+}
+.fifth-left > img {
+    width: 500px;
+}
+
+/* FAQ */
+
+.FAQ-page {
+    color: white;
+    border-bottom: 8px solid rgb(36, 35, 35);
+}
+
+.FAQ-container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.FAQ > h1 {
+    font-size: 50px;
+    margin: 3rem;
+}
+
+.FAQ > button {
+    background-color:#303030;
+    text-align: left;
+    color: white;
+    border: none;
+    margin: 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.3rem 2rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.login > h4 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.login > div {
+    display: flex;
+}
+
+.login > div > input {
+    width: 400px;
+    height: 60px;
+}
+
+.login > div > span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: red;
+    padding: 0.8rem 1.2rem;
+}
+
+/* FOOTER */
+.footer {
+    color: #757575;
+}
+
+.footer-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* .footer-container > span {
+    padding: 2rem;
+} */
+
+/* .foot_menu > a {
+    margin-right: 10rem;
+    word-break: keep-all;
+} */
+
+/* 리스트로 만들어야 겠구나! */
