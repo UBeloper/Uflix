@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
+.main {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@ body {
     border-bottom: 8px solid rgb(36, 35, 35);
 }
 
-.header::after{
+.main::after{
     content: "";
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@ body {
     height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
-    box-shadow: 300px -500px 250px #000000 , inset -120px -100px 250px #000000;
+    box-shadow: 500px -500px 250px #000000 , inset -120px -100px 250px #000000;
 }
 
 .top {
@@ -40,8 +40,8 @@ body {
 }
 
 .logo {
-    width: 12rem;
-    margin-left: 2rem;
+    width: 11rem;
+    margin-left: 3rem;
 
 }
 
@@ -53,6 +53,10 @@ body {
 .lang-login > select {
     margin-right: 2rem;
     padding : 0.5rem 0.7rem;
+    color: white;
+    background-color: black;
+    border: 0.7px white solid;
+    border-radius: 5px;
 }
 
 .lang-login > span {
@@ -61,6 +65,10 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 3px;
     border: none;
+}
+
+.lang-login > span:hover {
+    cursor: pointer;
 }
 
 .container {
@@ -98,18 +106,29 @@ body {
 .container > div > input {
     width: 400px;
     height: 60px;
+    
+}
+
+.container > div > input:focus {
+    outline: none;
 }
 
 .container > div > span {
     font-size: 1.8rem;
     font-weight: 500;
     background-color: red;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1.6rem;
 }
+
+.container > div > span:hover {
+    cursor: pointer;
+    background-color: rgb(243, 57, 57);
+}
+
 
 /* 두번째 장*/
 
-.second-page {
+.second-section {
     color: white;
     border-bottom: 8px solid rgb(36, 35, 35);
 }
@@ -129,11 +148,13 @@ body {
 .second-left > h1 {
     font-size: 50px;
     padding: 1rem 0;
+    word-break: keep-all;
 }
 
 .second-left > h4 {
     font-weight: 400;
     font-size: 25px;
+    word-break: keep-all;
 }
 
 .second-right {
@@ -143,9 +164,21 @@ body {
     width: 500px;
 }
 
+.second-right {
+    position: relative;
+}
+
+.second-right > video {
+    position: absolute;
+    top: 2.8rem;
+    left: 4.5rem;
+    width: 350px;
+    height: 270px;
+}
+
 /* 세번째 장*/
 
-.third-page {
+.third-section {
     color: white;
     border-bottom: 8px solid rgb(36, 35, 35);
 }
@@ -175,15 +208,54 @@ body {
 }
 
 .third-left {
+    position: relative;
     margin: 2rem;
 }
 .third-left > img {
     width: 500px;
 }
 
+.ani-save {
+    position: absolute;
+    bottom : 1.5rem;
+    left: 5rem;   
+    border: 3px solid rgb(36, 35, 35);
+    border-radius: 10px;
+    width: 20rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.ani-save img {
+    width: 55px;
+    height: 80px;
+}
+
+.ani-save i {
+    font-size: 24px;
+    color:lightgray;
+    position: absolute;
+    right: 1.5rem;
+}
+
+.ani-text {
+    padding: 1rem;
+}
+
+.ani-text div:nth-child(1) {
+    font-weight: bold;
+}
+
+.ani-text div:nth-child(2) {
+    color: blue;
+}
+
+
 /* 네번째 장 */
 
-.fourth-page {
+.fourth-section {
     color: white;
     border-bottom: 8px solid rgb(36, 35, 35);
 }
@@ -219,9 +291,21 @@ body {
     width: 500px;
 }
 
+.fourth-right {
+    position: relative;
+}
+
+.fourth-right > video {
+    position: absolute;
+    top: 1.6rem;
+    left: 6.4rem;
+    width: 290px;
+    height: 200px;
+}
+
 /* 다섯번째 장 */
 
-.fifth-page {
+.fifth-section {
     color: white;
     border-bottom: 8px solid rgb(36, 35, 35);
 }
@@ -259,7 +343,7 @@ body {
 
 /* FAQ */
 
-.FAQ-page {
+.FAQ-section {
     color: white;
     border-bottom: 8px solid rgb(36, 35, 35);
 }
@@ -281,6 +365,7 @@ body {
 }
 
 .FAQ > button {
+    position: relative;
     background-color:#303030;
     text-align: left;
     color: white;
@@ -289,6 +374,14 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     padding: 1.3rem 2rem;
+    cursor: pointer;
+}
+
+.FAQ > button > i {
+    position: absolute;
+    font-size: 30px;
+    right: 2rem;
+    top: 1.6rem;
 }
 
 .login {
@@ -346,13 +439,33 @@ body {
     margin-bottom: 2rem;
 }
 
-/* .footer-container > span {
-    padding: 2rem;
-} */
+.footer-container > p {
+    margin-bottom: 1.5rem;
+}
 
-/* .foot_menu > a {
-    margin-right: 10rem;
-    word-break: keep-all;
-} */
+.foot-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-/* 리스트로 만들어야 겠구나! */
+.foot-menu a{
+    font-size: 0.8rem;
+    padding: 0.5rem 0rem;
+}
+
+.footer-container > select {
+    margin: 1.8rem 0;
+    padding: 0.6rem 0.7rem;
+    color: white;
+    background-color: black;
+    border: 0.7px white solid;
+    border-radius: 5px;
+}
+
+.info > p {
+    font-size: 0.8rem;
+}
+
+.info p:nth-child(1) {
+    margin-bottom: 1.8rem;
+}

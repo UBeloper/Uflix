@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>유플릭스 대한민국</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
 </head>
 <body>
     <!-- 첫 장 -->
-    <div class="header">
+    <div class="main">
         <div class="top">
-            <img src="./img/logo2.PNG" class="logo">
+            <img src="./img/logo.PNG" class="logo">
             <div class="lang-login">
                 <select name="language" id="language">
                     <option value="한국어">한국어</option>
@@ -28,29 +30,39 @@
             <h1>영화, TV 프로그램을 무제한으로.</h1> 
             <h2>다양한 디바이스에서 시청하세요. 언제든지 해지하실 수 있습니다.</h2>
             <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
-            <div><input type="email" name="email" id="login"><span id="start">시작하기 ></span></div>
+            <div><input type="email" name="email" id="email"><span id="start">시작하기 ></span></div>
         </div>
     </div>
 
     <!-- 두번째 장 -->
-    <div class="second-page">
+    <div class="second-section">
         <div class="second-container">
             <div class="second-left">
                 <h1>TV로 즐기세요.</h1>
                 <h4>스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.</h4>
             </div>
             <div class="second-right">
+                <video autoplay loop muted poster="xxx" preload="xxx">
+                    <source src="/img/v1.m4v" type="video/mp4">
+                  </video>
                 <img src="./img/1.png">
             </div>
         </div>
     </div>
 
     <!-- 세번째 장-->
-
-    <div class="third-page">
+    <div class="third-section">
         <div class="third-container">
             <div class="third-left">
                 <img src="./img/3.jpg">
+                <div class="ani-save">
+                    <img src="/img/gimyo.png">
+                    <div class="ani-text">
+                        <div>기묘한 이야기</div>
+                        <div>저장 중...</div>
+                    </div>
+                    <i class="fa fa-cloud-download"></i>
+                </div>
             </div>
             <div class="third-right">
                 <h1>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>
@@ -60,7 +72,7 @@
     </div>    
 
     <!-- 네번째 장 -->
-    <div class="fourth-page">
+    <div class="fourth-section">
         <div class="fourth-container">
             <div class="fourth-left">
                 <h1>다양한 디바이스에서 시청하세요.</h1>
@@ -68,12 +80,15 @@
             </div>
             <div class="fourth-right">
                 <img src="./img/4.png">
+                <video autoplay loop muted poster="xxx" preload="xxx">
+                    <source src="/img/v2.m4v" type="video/mp4">
+                  </video>
             </div>
         </div>
     </div>
 
     <!-- 다섯번째 장-->
-    <div class="fifth-page">
+    <div class="fifth-section">
         <div class="fifth-container">
             <div class="fifth-left">
                 <img src="./img/5.png">
@@ -86,16 +101,28 @@
     </div>
 
     <!-- FAQ -->
-    <div class="FAQ-page">
+    <div class="FAQ-section">
     <div class="FAQ-container">
         <div class="FAQ">
             <h1>자주 묻는 질문</h1>
-            <button>넷플릭스란 무엇인가요?</button>
-            <button>넷플릭스 요금은 얼마인가요?</button>
-            <button>어디에서 시청할 수 있나요?</button>
-            <button>멤버십을 해지하려면 어떻게 하나요?</button>
-            <button>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</button>
-            <button>아이들이 넷플릭스를 봐도 좋을까요?</button>
+            <button>넷플릭스란 무엇인가요?
+                <i class="fa fa-plus"></i>
+            </button>
+            <button>넷플릭스 요금은 얼마인가요?
+                <i class="fa fa-plus"></i>
+            </button>
+            <button>어디에서 시청할 수 있나요?
+                <i class="fa fa-plus"></i>
+            </button>
+            <button>멤버십을 해지하려면 어떻게 하나요?
+                <i class="fa fa-plus"></i>
+            </button>
+            <button>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
+                <i class="fa fa-plus"></i>
+            </button>
+            <button>아이들이 넷플릭스를 봐도 좋을까요?
+                <i class="fa fa-plus"></i>
+            </button>
         </div>
         <div class="login">    
             <h4>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요. </h4>
@@ -107,23 +134,23 @@
     <!-- FOOTER -->
     <div class="footer">
         <div class="footer-container">
-            <span>질문이 있으신가요? 문의 전화 : <a href="#">080-001-9587</a></span>
-            <div class="foot_menu">
-                <a href="">자주 묻는 질문</a>
-                <a href="">고객 센터</a>
-                <a href="">계정</a>
-                <a href="">미디어 센터</a>
-                <a href="">투자 정보(IR)</a>
-                <a href="">입사 정보</a>
-                <a href="">넷플릭스 지원 디바이스</a>
-                <a href="">이용 약관</a>
-                <a href="">개인 정보</a>
-                <a href="">쿠키 설정</a>
-                <a href="">회사 정보</a>
-                <a href="">문의 하기</a>
-                <a href="">속도 테스트</a>
-                <a href="">법적 고지</a>
-                <a href="">오직 넷플릭스에서</a>
+            <p>질문이 있으신가요? 문의 전화 : <a href="#">080-001-9587</a></p>
+            <div class="foot-menu">
+                <a href="#">자주 묻는 질문</a>
+                <a href="#">고객 센터</a>
+                <a href="#">계정</a>
+                <a href="#">미디어 센터</a>
+                <a href="#">투자 정보(IR)</a>
+                <a href="#">입사 정보</a>
+                <a href="#">넷플릭스 지원 디바이스</a>
+                <a href="#">이용 약관</a>
+                <a href="#">개인 정보</a>
+                <a href="#">쿠키 설정</a>
+                <a href="#">회사 정보</a>
+                <a href="#">문의 하기</a>
+                <a href="#">속도 테스트</a>
+                <a href="#">법적 고지</a>
+                <a href="#">오직 넷플릭스에서</a>
             </div>
             <select>
                 <option>한국어</option>
@@ -143,6 +170,14 @@
     </div>
 
 
+    
+    <!-- 못한 것 -->
+    <!--    1. FAQ 버튼 - 아래로 텍스트창 열기 
+            2. 이미지 뒤로 영상겹치기
+            3. "::after" 
+            4. select 상자 꾸미기
+            5. input창 위에 글씨 띄웠다가 사라지기
+    -->
 
 
     
