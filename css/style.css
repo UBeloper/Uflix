@@ -51,14 +51,11 @@ body {
     
 }
 .lang-login > select {
-
-
-
-    
     margin-right: 2rem;
     padding : 0.5rem 0.7rem;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.2);
+    opacity: 1;
     border: 0.7px white solid;
     border-radius: 5px;
 }
